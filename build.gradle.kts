@@ -22,3 +22,18 @@ tasks.test {
 kotlin {
     jvmToolchain(21)
 }
+
+// 跳过编译的文件
+val willNotCompile = listOf(
+    "**/ch13_functional/Closure3.java",
+    "**/ch13_functional/Closure5.java",
+    "**/ch13_functional/Closure7.java",
+)
+
+sourceSets {
+    named("main") {
+        java {
+            exclude(willNotCompile)
+        }
+    }
+}
