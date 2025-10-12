@@ -15,7 +15,7 @@ public class Closure5 {
         int i = 0;
         i++;
         x++;
-        // Variable used in lambda expression should be final or effectively final
+        // Errors: Variable used in lambda expression should be final or effectively final
         return () -> x + i;
     }
 }

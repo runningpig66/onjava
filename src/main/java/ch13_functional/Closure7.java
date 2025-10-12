@@ -14,7 +14,7 @@ public class Closure7 {
     IntSupplier makeFun(int x) {
         Integer i = 0;
         i = i + 1;
-        // Variable used in lambda expression should be final or effectively final
+        // Error: Variable used in lambda expression should be final or effectively final
         return () -> x + i;
     }
 }
