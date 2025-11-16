@@ -29,6 +29,7 @@ val willNotCompile = listOf(
     "**/ch13_functional/Closure5.java",
     "**/ch13_functional/Closure7.java",
     "**/ch13_functional/Closure9.java",
+    "**/ch15_exceptions/TryAnything.java",
 )
 
 sourceSets {
