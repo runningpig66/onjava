@@ -15,7 +15,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation(kotlin("stdlib-jdk8"))
     // 添加 Guava 依赖
-    implementation("com.google.guava:guava:30.1-jre")
+    implementation("com.google.guava:guava:32.0.1-android")
 }
 
 tasks.test {

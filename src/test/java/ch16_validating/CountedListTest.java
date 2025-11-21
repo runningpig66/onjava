@@ -1,6 +1,5 @@
-package ch16_validating.tests;
+package ch16_validating;
 
-import ch16_validating.CountedList;
 import org.junit.jupiter.api.*;
 
 import java.util.Arrays;

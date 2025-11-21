@@ -1,7 +1,5 @@
-package ch16_validating.tests;
+package ch16_validating;
 
-import ch16_validating.CircularQueue;
-import ch16_validating.CircularQueueException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
