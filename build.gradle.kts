@@ -14,8 +14,10 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation(kotlin("stdlib-jdk8"))
-    // 添加 Guava 依赖
-    implementation("com.google.guava:guava:32.0.1-android")
+    // Guava: Google Core Libraries For Java
+    implementation("com.google.guava:guava:33.5.0-jre")
+    // Logback Classic Module
+    implementation("ch.qos.logback:logback-classic:1.5.21")
 }
 
 tasks.test {
@@ -32,6 +34,7 @@ val willNotCompile = listOf(
     "**/ch13_functional/Closure7.java",
     "**/ch13_functional/Closure9.java",
     "**/ch15_exceptions/TryAnything.java",
+    "**/ch15_exceptions/Human.java", // 异常捕获报错，临时排除
 )
 
 sourceSets {
