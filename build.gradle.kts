@@ -18,6 +18,10 @@ dependencies {
     implementation("com.google.guava:guava:33.5.0-jre")
     // Logback Classic Module
     implementation("ch.qos.logback:logback-classic:1.5.21")
+    // JMH Core
+    testImplementation("org.openjdk.jmh:jmh-core:1.37")
+    // JMH Generators: Annotation Processors
+    testAnnotationProcessor("org.openjdk.jmh:jmh-generator-annprocess:1.37")
 }
 
 tasks.test {
@@ -43,4 +47,12 @@ sourceSets {
             exclude(willNotCompile)
         }
     }
+}
+
+tasks.withType<JavaExec>().configureEach {
+    jvmArgs(
+        "-Dsun.stdout.encoding=UTF-8",
+        "-Dsun.stderr.encoding=UTF-8",
+        "-Dfile.encoding=UTF-8"
+    )
 }

@@ -6,7 +6,7 @@ import static java.lang.Character.*;
  * @author runningpig66
  * @date 2025/11/20 周四
  * @time 16:38
- * P503 §16.3 测试驱动开发
+ * P.503 §16.3 测试驱动开发
  * <p>
  * 在 Inverter3 的基础上，最后实现排除不允许的字符：
  */

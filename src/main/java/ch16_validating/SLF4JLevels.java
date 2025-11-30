@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
  * @author runningpig66
  * @date 2025/11/22 周六
  * @time 0:29
- * P507 §16.4 日志：日志级别
+ * P.507 §16.4 日志：日志级别
  * <p>
  * SLF4J 提供了多个级别的报告。下面的示例按“严重性“的递增顺序显示了所有的级别：
  * Gradle 依赖：implementation("ch.qos.logback:logback-classic:1.5.21")

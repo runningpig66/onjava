@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
  * @author runningpig66
  * @date 2025/11/21 周五
  * @time 22:45
- * P506 §16.4 日志
+ * P.506 §16.4 日志
  * <p>
  * SLF4J 提供了一个成熟的工具来报告有关程序的信息，其效率儿乎与前面示例中的技术相同。
  * 对于非常简单的信息记录，可以执行以下操作：
