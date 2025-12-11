@@ -9,7 +9,7 @@ import java.nio.file.Path;
  * @author runningpig66
  * @date 2025/12/8 周一
  * @time 17:44
- * P.535 §17.3 文件系统
+ * P.537 §17.3 文件系统
  * <p>
  * 为了完整起见，我们需要一种方式来找出文件系统的其他信息。
  * 在这里，我们可以使用静态的 FileSystems 工具来获得“默认”的文件系统，
