@@ -1,9 +1,9 @@
 package ch12_collections;
 
-import reflection.pets.Cat;
-import reflection.pets.Dog;
-import reflection.pets.Hamster;
-import reflection.pets.Pet;
+import ch19_reflection.pets.Cat;
+import ch19_reflection.pets.Dog;
+import ch19_reflection.pets.Hamster;
+import ch19_reflection.pets.Pet;
 
 import java.util.HashMap;
 import java.util.Map;

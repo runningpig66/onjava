@@ -1,9 +1,9 @@
 package ch12_collections;
 
-import reflection.pets.Hamster;
-import reflection.pets.Pet;
-import reflection.pets.PetCreator;
-import reflection.pets.Rat;
+import ch19_reflection.pets.Hamster;
+import ch19_reflection.pets.Pet;
+import ch19_reflection.pets.PetCreator;
+import ch19_reflection.pets.Rat;
 
 import java.util.LinkedList;
 

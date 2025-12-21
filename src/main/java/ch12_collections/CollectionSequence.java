@@ -1,8 +1,8 @@
 package ch12_collections;
 
+import ch19_reflection.pets.Pet;
+import ch19_reflection.pets.PetCreator;
 import org.jetbrains.annotations.NotNull;
-import reflection.pets.Pet;
-import reflection.pets.PetCreator;
 
 import java.util.AbstractCollection;
 import java.util.Iterator;

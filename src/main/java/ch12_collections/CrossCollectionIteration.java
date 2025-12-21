@@ -1,7 +1,7 @@
 package ch12_collections;
 
-import reflection.pets.Pet;
-import reflection.pets.PetCreator;
+import ch19_reflection.pets.Pet;
+import ch19_reflection.pets.PetCreator;
 
 import java.util.*;
 
