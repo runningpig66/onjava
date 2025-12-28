@@ -38,7 +38,7 @@ val willNotCompile = listOf(
     "**/ch13_functional/Closure7.java",
     "**/ch13_functional/Closure9.java",
     "**/ch15_exceptions/TryAnything.java",
-    "**/ch15_exceptions/Human.java", // 异常捕获报错，临时排除
+    "**/ch20_generics/Manipulation.java",
 )
 
 sourceSets {
