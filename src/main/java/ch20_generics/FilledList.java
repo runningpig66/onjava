@@ -20,7 +20,7 @@ import java.util.function.Supplier;
  * 尽管在 add() 内部，编译器无法获知任何关于 T 的信息，但仍然可以在编译时确保向 FilledList 中放入的是类型 T。
  * 因此，即使类型擦除移除了方法或类中的实际类型信息，编译器仍然能够确保类型使用方式的内部一致性。
  * <p>
- * notes: 泛型边界行为：数组的运行时依赖与集合的编译期一致性分析.md
+ * notes: 04-泛型边界行为：数组的运行时依赖与集合的编译期一致性.md
  */
 public class FilledList<T> extends ArrayList<T> {
     FilledList(Supplier<T> gen, int size) {

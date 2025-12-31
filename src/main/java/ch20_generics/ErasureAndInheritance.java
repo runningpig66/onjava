@@ -19,10 +19,8 @@ package ch20_generics;
  * <p>
  * 另外，类型擦除和迁移兼容性意味着泛型的使用并非是强制性的，尽管你可能希望如此：
  * <p>
- * notes: ErasureAndInheritance1.md
- * Java 泛型的历史抉择与“擦除”的必然性
- * notes: ErasureAndInheritance2.md
- * 实战中的警告与错误——堆污染与继承规则
+ * notes: 01-泛型的历史抉择与“擦除”的必然性.md
+ * notes: 02-实战中的警告与错误：堆污染与继承规则.md
  */
 class GenericBase<T> {
     private T element;

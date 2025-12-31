@@ -14,7 +14,7 @@ package ch20_generics;
  * get() 和 set() 生成了相同的字节码，由此可知泛型所有的行为都发生在边界————包括对传入值额外的编译时检查，
  * 和对输出值插入的类型转换。记住“边界是行为发生的地方”，这有助于减少对类型擦除产生的困惑。
  * <p>
- * notes: Java 泛型擦除的字节码表现：指令同一性与 CHECKCAST 自动转型机制
+ * notes: 05-泛型擦除的字节码表现：指令同一性与 CHECKCAST 自动转型机制.md
  */
 public class GenericHolder2<T> {
     private T obj;

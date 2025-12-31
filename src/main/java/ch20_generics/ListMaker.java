@@ -14,7 +14,7 @@ import java.util.List;
  * 编译器并未产生警告，尽管我们知道（由于类型擦除）在 create() 内部的 new ArrayList<T>() 方法中，<T> 被擦除了————
  * 在运行时，类中并没有<T>，因此它看起来似乎并没有什么实际用处。但是如果顺着这个思路将表达式修改为 new ArrayList()，编译器会产生警告。
  * <p>
- * notes: 泛型边界行为：数组的运行时依赖与集合的编译期一致性分析.md
+ * notes: 04-泛型边界行为：数组的运行时依赖与集合的编译期一致性.md
  */
 public class ListMaker<T> {
     List<T> create() {

@@ -39,6 +39,7 @@ val willNotCompile = listOf(
     "**/ch13_functional/Closure9.java",
     "**/ch15_exceptions/TryAnything.java",
     "**/ch20_generics/Manipulation.java",
+    "**/ch20_generics/Erased.java",
 )
 
 sourceSets {
@@ -47,6 +48,11 @@ sourceSets {
             exclude(willNotCompile)
         }
     }
+}
+
+tasks.withType<JavaCompile>().configureEach {
+    options.compilerArgs.add("-Xlint:unchecked")
+    options.encoding = "UTF-8"
 }
 
 tasks.withType<JavaExec>().configureEach {

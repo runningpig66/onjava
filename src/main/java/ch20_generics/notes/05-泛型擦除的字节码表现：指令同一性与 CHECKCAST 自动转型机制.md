@@ -1,3 +1,5 @@
+[TOC]
+
 # 笔记五：Java 泛型擦除的字节码表现：指令同一性与 CHECKCAST 自动转型机制
 
 **标签**：`Java` `Bytecode` `Generics` `TypeErasure` `CHECKCAST`
@@ -109,7 +111,7 @@ String s = holder.get(); // 源码里没有强转
 1. **编译时（Compile-time）**：
 泛型是**真实存在**的。编译器利用 `Signature` 信息进行严格的类型检查，防止类型不匹配的代码通过编译。
 2. **运行时（Runtime）**：
-  泛型是**不存在**的（被擦除）。代码退化为原生的 `Object` 操作（如 `SimpleHolder`）。
+    泛型是**不存在**的（被擦除）。代码退化为原生的 `Object` 操作（如 `SimpleHolder`）。
 
   - **存储时**：泛化为 `Object` 存储。
 

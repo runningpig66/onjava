@@ -11,7 +11,7 @@ package ch20_generics;
  * <p>
  * set() 方法和 get() 方法分别负责存储和返回值，而在调用 get() 时则会对类型转换进行检查。
  * <p>
- * notes: Java 泛型擦除的字节码表现：指令同一性与 CHECKCAST 自动转型机制
+ * notes: 05-泛型擦除的字节码表现：指令同一性与 CHECKCAST 自动转型机制.md
  */
 public class SimpleHolder {
     private Object obj;

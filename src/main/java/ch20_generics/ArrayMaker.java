@@ -18,8 +18,10 @@ import java.util.Arrays;
  * 注意对 Array.newInstance() 的使用，这是在泛型中创建数组的推荐方式。
  * public static Object newInstance(Class<?> componentType, int length) throws NegativeArraySizeException
  * <p>
- * notes: Java 泛型数组创建与类型擦除机制解析.md
- * notes: 泛型边界行为：数组的运行时依赖与集合的编译期一致性分析.md
+ * notes: 03-泛型数组创建与类型擦除机制解析.md
+ * notes: 04-泛型边界行为：数组的运行时依赖与集合的编译期一致性.md
+ * notes: 07-为什么需要 Array.newInstance？—从“写死”到“通用”的跨越.md
+ * notes: 08-泛型数组的完整生命周期：从编译期推导到运行时反射.md
  */
 public class ArrayMaker<T> {
     private Class<T> kind;
