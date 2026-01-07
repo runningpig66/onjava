@@ -49,7 +49,7 @@ public class ToyTest {
         System.out.println("Canonical name : " + cc.getCanonicalName());
     }
 
-    //    @SuppressWarnings("deprecation")
+    @SuppressWarnings("deprecation")
     public static void main(String[] args) {
         Class c = null;
         try {

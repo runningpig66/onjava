@@ -30,6 +30,7 @@ public class ArrayMaker<T> {
         this.kind = kind;
     }
 
+    @SuppressWarnings("unchecked")
     T[] create(int size) {
         // Warning: Unchecked cast: 'java.lang.Object' to 'T[]'
         return (T[]) Array.newInstance(kind, size);

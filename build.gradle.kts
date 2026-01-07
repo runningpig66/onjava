@@ -38,8 +38,10 @@ val willNotCompile = listOf(
     "**/ch13_functional/Closure7.java",
     "**/ch13_functional/Closure9.java",
     "**/ch15_exceptions/TryAnything.java",
+    "**/ch15_exceptions/Human.java", // Warning: UnreachableCatch
     "**/ch20_generics/Manipulation.java",
     "**/ch20_generics/Erased.java",
+    "**/ch20_generics/NonCovariantGenerics.java",
 )
 
 sourceSets {
@@ -51,7 +53,11 @@ sourceSets {
 }
 
 tasks.withType<JavaCompile>().configureEach {
-    options.compilerArgs.add("-Xlint:unchecked")
+    options.compilerArgs.apply {
+        add("-Xlint:unchecked")
+        add("-Xlint:deprecation")
+        // add("-Werror")
+    }
     options.encoding = "UTF-8"
 }
 
