@@ -6,6 +6,7 @@ import ch20_generics.Holder;
  * @author runningpig66
  * @date 2026/1/7 周三
  * @time 1:08
+ * P.705 §20.9 通配符 §20.9.4 捕获转换
  */
 @SuppressWarnings("unchecked")
 public class StrictCapture {

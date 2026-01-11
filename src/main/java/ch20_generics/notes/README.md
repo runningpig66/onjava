@@ -2,3 +2,12 @@ UnboundedWildcards1.java
 [无界通配符<?>]
 [静态类型视角]
 [编译器分级警告]
+MultipleInterfaceVariants.java
+ComparablePet.java
+RestrictedComparablePets.java
+HijackedInterface.java
+[基类劫持]
+[桥接方法]
+ComparatorTest.java
+[协变位置]
+[逆变位置]

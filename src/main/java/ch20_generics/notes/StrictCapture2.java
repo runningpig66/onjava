@@ -6,6 +6,7 @@ import ch20_generics.Holder;
  * @author runningpig66
  * @date 2026/1/7 周三
  * @time 1:08
+ * P.705 §20.9 通配符 §20.9.4 捕获转换
  * <p>
  * TODO: 这就是为什么在没有传入 Class Token（类型令牌） 进行显式运行时检查的情况下，单纯利用捕获转换和强转来写入异构数据，本质上是在利用 Java 类型系统的漏洞进行“裸奔”。
  * <p>

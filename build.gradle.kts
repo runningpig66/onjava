@@ -42,6 +42,11 @@ val willNotCompile = listOf(
     "**/ch20_generics/Manipulation.java",
     "**/ch20_generics/Erased.java",
     "**/ch20_generics/NonCovariantGenerics.java",
+    "**/ch20_generics/MultipleInterfaceVariants.java",
+    "**/ch20_generics/UseList.java",
+    "**/ch20_generics/HijackedInterface.java",
+    "**/ch20_generics/notes/CovarianceTest.java",
+    "**/ch20_generics/notes/ContravarianceTest.java",
 )
 
 sourceSets {

@@ -33,6 +33,7 @@ public class CaptureConversion {
         f1(holder); // Call with captured type
     }
 
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         Holder raw = new Holder<>(1);
 
