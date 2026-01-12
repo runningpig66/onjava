@@ -61,6 +61,7 @@ tasks.withType<JavaCompile>().configureEach {
     options.compilerArgs.apply {
         add("-Xlint:unchecked")
         add("-Xlint:deprecation")
+        add("-Xdiags:verbose")
         // add("-Werror")
     }
     options.encoding = "UTF-8"
