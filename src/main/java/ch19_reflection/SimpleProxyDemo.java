@@ -13,6 +13,8 @@ package ch19_reflection;
  * 或反过来，这时代理就很有用了（设计模式的关注点就是封装修改————因此你需要做对应的修改来适应模式）。
  * 例如，如果你希望跟踪对 RealObject 中方法的调用，或者测量此类调用的开销，该怎么办？
  * 你肯定不希望在应用程序中包含这些代码，而代理可以让你很容易地添加或删除它们。
+ * <p>
+ * notes: Java动态代理：从原理到实战.md
  */
 interface Interface {
     void doSomething();

@@ -14,8 +14,7 @@ import java.lang.reflect.Proxy;
  * 通常，你会执行被代理的操作，然后使用 Method.invoke() 方法将请求转发给被代理的对象，并传入必要的参数。
  * 乍一看这可能有些受限，就好像你只能执行通用的操作一样。但是，你可以过滤某些方法调用、同时又放行其他的方法调用；
  * <p>
- * notes: SimpleDynamicProxy.md
- * 理解Java动态代理
+ * notes: Java动态代理：从原理到实战.md
  */
 class MethodSelector implements InvocationHandler {
     private Object proxied;

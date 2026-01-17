@@ -27,8 +27,7 @@ import java.lang.reflect.Proxy;
  * (Proxy.java)
  * public static Object newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h)
  * <p>
- * notes: SimpleDynamicProxy.md
- * 理解Java动态代理
+ * notes: Java动态代理：从原理到实战.md
  */
 class DynamicProxyHandler implements InvocationHandler {
     private Object proxied;
@@ -39,8 +38,7 @@ class DynamicProxyHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("**** proxy: " + proxy.getClass() +
-                ", method: " + method + ", args: " + args);
+        System.out.println("**** proxy: " + proxy.getClass() + ", method: " + method + ", args: " + args);
         if (args != null) {
             for (Object arg : args) {
                 System.out.println("  " + arg);

@@ -1,7 +1,7 @@
 package ch18_strings;
 
-import generics.coffee.Coffee;
-import generics.coffee.CoffeeSupplier;
+import ch20_generics.coffee.Coffee;
+import ch20_generics.coffee.CoffeeSupplier;
 
 import java.util.List;
 import java.util.stream.Collectors;

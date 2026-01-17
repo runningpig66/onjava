@@ -1,6 +1,10 @@
 [TOC]
 
-# 深入理解Java动态代理：从原理到实战
+# Java动态代理：从原理到实战
+
+**标签**：`Proxy` `dynamic proxy` `InvocationHandler`
+**日期**：2025-12-22
+**代码案例**：ch19: 反射 - Reflection §19.7 动态代理 `SimpleProxyDemo.java` `SimpleDynamicProxy.java` `SelectingMethods.java` 
 
 ## 一、动态代理的核心思想
 
@@ -8,8 +12,8 @@
 动态代理是在**运行时**创建代理类和对象的技术，所有方法调用都被重定向到一个统一的调用处理器（InvocationHandler）。
 
 ### 1.2 核心组件
-- **Proxy类**：负责生成代理类字节码并创建代理对象
-- **InvocationHandler接口**：定义代理行为的处理器
+- **`Proxy`类**：负责生成代理类字节码并创建代理对象
+- **`InvocationHandler`接口**：定义代理行为的处理器
 - **目标对象**：被代理的真实对象
 
 ## 二、静态代理 vs 动态代理
@@ -36,7 +40,7 @@ class StaticProxy implements Interface {
 ```
 
 ### 2.2 动态代理的优势
-- **代码复用**：所有方法的代理逻辑集中在invoke()方法中
+- **代码复用**：所有方法的代理逻辑集中在`invoke()`方法中
 - **维护简单**：接口变化不影响代理代码
 - **运行时灵活**：可根据条件动态决定代理行为
 
@@ -281,8 +285,8 @@ User user = service.getUser(123);  // 实际发送网络请求
 
 ### 8.4 学习建议
 1. 先理解静态代理的痛点
-2. 掌握Proxy.newProxyInstance()的三参数含义
-3. 理解InvocationHandler.invoke()的工作机制
+2. 掌握`Proxy.newProxyInstance()`的三参数含义
+3. 理解`InvocationHandler.invoke()`的工作机制
 4. 通过实际案例理解应用场景
 5. 注意代理和委托的区别与选择
 
