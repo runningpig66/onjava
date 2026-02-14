@@ -7,7 +7,7 @@ import java.util.Formatter;
  * @author runningpig66
  * @date 2025/12/12 周五
  * @time 19:50
- * P.560 §18.5 格式化输出 §18.5.5 Formatter 转换
+ * P.560 §18.5 格式化输出 §18.5.5 Formatter 转换 [IMP]
  * <p>
  * 以下展示了一些最常见的转换字符。下面的示例显示了这些转换的实际效果：
  * <p>

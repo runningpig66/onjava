@@ -36,10 +36,16 @@ public class Individual implements Comparable<Individual> {
         return id;
     }
 
-    @Override
+    /*@Override
     public boolean equals(Object obj) {
         return obj instanceof Individual &&
                 Objects.equals(id, ((Individual) obj).id);
+    }*/
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Individual individual &&
+                Objects.equals(id, individual.id);
     }
 
     @Override
@@ -47,6 +53,7 @@ public class Individual implements Comparable<Individual> {
         return Objects.hash(name, id);
     }
 
+    // compareTo() 方法中的比较逻辑是有层次结构的：首先按实际类型来排序，然后按 name（如果有的话）排序，最后如果还没有结果的话就按创建顺序来排序。
     @Override
     public int compareTo(@NonNull Individual o) {
         // Compare by class name first:
