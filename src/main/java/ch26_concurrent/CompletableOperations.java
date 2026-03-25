@@ -42,6 +42,8 @@ public class CompletableOperations {
         // 使用此方法可以避免结果产生多层嵌套（如 CompletableFuture<CompletableFuture<T>>），
         // 它会自动将内部的 CompletableFuture 展平，最终向外暴露一个单一的 CompletableFuture 对象。
         showr(cfi(6).thenComposeAsync(i -> cfi(i + 99)));
+        // <U> CompletableFuture<U> thenCompose(Function<? super T, ? extends CompletionStage<U>> fn)
+        // showr(cfi(6).thenCompose(i -> cfi(i + 99))); // 105
         CompletableFuture<Integer> c = cfi(7);
         // void obtrudeValue(T value) 强制替换或设置 CompletableFuture 的结果。
         // 无论该任务当前是未完成、已完成还是异常结束，调用此方法都会无条件将其状态标记为完成，

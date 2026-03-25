@@ -15,6 +15,7 @@ public class Fibonacci {
     int x = 1;
 
     Stream<Integer> numbers() {
+        // static <T> Stream<T> iterate(final T seed, final UnaryOperator<T> f)
         return Stream.iterate(0, i -> {
             int result = x + i;
             x = i;
